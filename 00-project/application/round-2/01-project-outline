@@ -1,0 +1,39 @@
+---
+Név: Bata Marcell
+Neptun: WNJFN3
+Project ID: 2026-LA-04
+Github:
+Github_project:
+---
+
+# Okos parkolóház-kezelő rendszer
+
+A projekt egy korszerű parkolóház működését támogató relációs adatbázis és az arra épülő egyszerű webes kezelőfelület megtervezését és megvalósítását foglalja magában. A fő hangsúly az adatbázis-tervezésen, a tranzakciókezelésen, az adatbázisban megvalósított üzleti logikán, a konkurens hozzáférések kezelésén és a teljesítményoptimalizáláson van. A megoldás az egymással összefüggő adatok (parkolóhelyek, ügyfelek, foglalások, be- és kihajtások, tarifák) tárolása mellett olyan üzleti szabályokat is magában foglal, mint a foglalási ütközések megakadályozása és a díjak helyes kiszámítása. A webes felület mindezek használatát és működését demonstrálja.
+
+## Célok
+
+- **Elsődleges cél:** Egy működő, verziókezelt, dokumentált és reprodukálható adatbázis-központú rendszer létrehozása, amely biztonságosan kezeli az egyidejű foglalási kéréseket.
+- **Célfelhasználók / érintettek:** A parkolóházat használó ügyfelek és az aktuális foglaltságot, valamint statisztikákat áttekintő üzemeltetők.
+- **Mérhető sikerkritériumok:** A rendszer sikeresen megakadályozza a kettős foglalásokat tranzakciókezeléssel, reprodukálható tesztadatokat generál legalább százezer foglalási és parkolási eseménnyel, továbbá legalább öt lekérdezésnél dokumentált teljesítményoptimalizálást mutat be.
+- **Korlátok:** Az adatbázisnak Oracle (SQL és PL/SQL) vagy Microsoft SQL Server (SQL és T-SQL) rendszerben kell készülnie. A foglalási és parkolási üzleti logika lényeges részeit szigorúan adatbázis-oldali tárolt eljárásokkal, függvényekkel és megszorításokkal kell megvalósítani. A webes felület funkcionális terjedelme korlátozott kell maradjon, és a felelősségmegosztás során nem helyettesítheti az adatbázisban előírt üzleti szabályokat.
+
+## Hatókör
+
+### Benne van a hatókörben
+
+- Legalább tizenkét egymással kapcsolatban álló táblából álló, harmadik normálformáig (3NF) tervezett relációs adatmodell elkészítése.
+- Adatbázis-szintű üzleti szabályok érvényesítése, beleértve a hivatkozási integritást és az egyediségi feltételeket.
+- Szabad hely keresése, foglalások létrehozása és lemondása, illetve saját foglalások megtekintése a webes felületen.
+- Üzemeltetői statisztikák (foglaltsági és kihasználtsági statisztika, bevételi kimutatás) és többtáblás aggregációk lekérdezése és megjelenítése.
+- Legalább két zárolási vagy tranzakciós megközelítés összehasonlítása az egyidejű foglalási kérések kezelésére.
+
+### Nincs benne a hatókörben
+
+- Összetett mobilalkalmazás készítése.
+- Teljes körű online fizetési szolgáltatás megvalósítása.
+- Komplex grafikus parkolóház-vizualizáció fejlesztése.
+- Rendszámfelismerő vagy beléptető rendszer kötelező integrációja a projekt alapverziójában.
+
+## Jegyzetek
+
+A webes felületnek az adatbázis-funkciókat adatbázis-oldali eljárások vagy szolgáltatásréteg meghívásával kell használnia. Későbbi fejlesztési irányként (lehetséges bővítésként) szóba jöhet elektromos autó-töltőhelyek kezelése, dinamikus tarifaképzés, részletesebb üzemeltetői dashboard készítése, vagy online fizetés és rendszámfelismerő rendszer beépítése.
