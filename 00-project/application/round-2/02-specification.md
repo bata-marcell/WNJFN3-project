@@ -9,6 +9,7 @@ project_outline: "[[semester-1-hu/01-project-outline]]"
 | --- | --- | --- |
 | Ügyfél | Parkolóhely keresése, foglalása és lemondása, saját foglalások megtekintése | Keres, foglal, lemond, megtekint a saját foglalások körében. |
 | Üzemeltető | Parkolóház aktuális állapotának és statisztikáinak áttekintése | Megtekinti az aktuális foglaltságot, bevételi és kihasználtsági statisztikákat. |
+| Menedzser | A rendszer szakszerű üzemelésének fenntartása | Hozzáfér és szükség esetén kezeli az adatokat, foglalásokat és elhárítja a fellépő hibákat. |
 
 ## 2. Use case-ek / user storyk
 
