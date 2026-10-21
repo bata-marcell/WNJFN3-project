@@ -213,4 +213,4 @@ A cél egy megbízható, adatbázis-központú parkolóház-kezelő rendszer.
 - **Webes felület:** Vékony szolgáltatásréteg
 - **Tesztelés:** Konkurencia, teljesítmény, integritás
 
-*A siker kulcsa: adatkonzisztencia, biztonságos tranzakciók és mérhető teljesítmény.*# Okos parkolóház-kezelő rendszer
+*A siker kulcsa: adatkonzisztencia, biztonságos tranzakciók és mérhető teljesítmény.*
